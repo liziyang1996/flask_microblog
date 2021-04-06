@@ -1,5 +1,6 @@
-from flask import render_template
+from flask import render_template, flash, redirect, url_for
 from app import app
+from app.forms import LoginForm
 
 #2个路由
 @app.route('/')
@@ -19,3 +20,14 @@ def index():
 		}
 	]
 	return render_template('index.html', title='Home', user=user, posts=posts)
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	form = LoginForm() #表单实例化对象
+	if form.validate_on_submit():
+		#flash用于向用户显示消息，如让用户知道某些操作是否成功
+		flash('Login requested for user {},remember_me={}'.format(form.username.data,form.remember_me.data))
+		return redirect(url_for('index'))
+
+	return render_template('login.html', title='Sign in', form=form)
