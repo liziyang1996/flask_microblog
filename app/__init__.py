@@ -1,6 +1,8 @@
 import logging
 #从flask包中导入Flask类
 from flask import Flask
+from flask_mail import Mail
+
 from config import Config
 from logging.handlers import RotatingFileHandler
 import os
@@ -13,6 +15,8 @@ app = Flask(__name__)
 
 login = LoginManager(app)
 login.login_view = 'login'
+
+mail = Mail(app)
 
 app.config.from_object(Config)
 
