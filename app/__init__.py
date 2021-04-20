@@ -1,6 +1,7 @@
 import logging
 #从flask包中导入Flask类
 from flask import Flask
+from flask_bootstrap import Bootstrap
 from flask_mail import Mail
 
 from config import Config
@@ -9,6 +10,7 @@ import os
 from flask_sqlalchemy import SQLAlchemy#从包中导入类
 from flask_migrate import Migrate
 from flask_login import LoginManager
+
 
 # 将Flask类的实例 赋值给名为 app 的变量。这个实例成为app包的成员。
 app = Flask(__name__)
@@ -21,6 +23,7 @@ login = LoginManager(app)
 login.login_view = 'login'
 
 mail = Mail(app)
+bootstrap = Bootstrap(app)
 
 # 从app包中导入模块routes
 from app import routes, models, errors
