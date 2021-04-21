@@ -1,0 +1,145 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-04-21 11:06+0800\n"
+"PO-Revision-Date: 2021-04-21 14:01+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: app/__init__.py:26
+msgid "Please log in to access this page."
+msgstr "想要进入此页面？请先登录！"
+
+#: app/email.py:21
+msgid "[Microblog] Reset Your Password"
+msgstr "[Microblog] 重置你的密码"
+
+#: app/forms.py:9 app/forms.py:45
+msgid "Username"
+msgstr "用户名"
+
+#: app/forms.py:10 app/forms.py:39
+msgid "Password"
+msgstr "密码"
+
+#: app/forms.py:11
+msgid "Remember Me"
+msgstr "自动登录"
+
+#: app/forms.py:12
+msgid "Sign In"
+msgstr "登录"
+
+#: app/forms.py:34
+msgid "Email"
+msgstr "邮箱"
+
+#: app/forms.py:35 app/forms.py:41
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/forms.py:40
+msgid "Repeat Password"
+msgstr "再次输入密码"
+
+#: app/forms.py:46
+msgid "About_me"
+msgstr "签名"
+
+#: app/forms.py:47 app/forms.py:67
+msgid "Submit"
+msgstr "提交"
+
+#: app/forms.py:58
+msgid "Please use a different username."
+msgstr "用户名重复，请使用其他用户名"
+
+#: app/forms.py:66
+msgid "Say something"
+msgstr "说点什么吧"
+
+#: app/routes.py:24
+msgid "Your post is now live!"
+msgstr "您的帖子已发布"
+
+#: app/routes.py:58
+msgid "Invalid username or password"
+msgstr "无效的用户名或密码"
+
+#: app/routes.py:86
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: app/routes.py:100
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/routes.py:116
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/routes.py:149
+msgid "Your changes have been saved!"
+msgstr ""
+
+#: app/routes.py:164 app/routes.py:184
+#, python-format
+msgid "User %(username)s not found."
+msgstr "无效的用户名"
+
+#: app/routes.py:167
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/routes.py:171
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/routes.py:187
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/routes.py:191
+#, python-format
+msgid "You are not following %(username)s."
+msgstr ""
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr ""
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s %(when)s 说 "
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "你好, %(username)s!"
+
+#: app/templates/email/reset_password.html:3
+msgid "To reset your password"
+msgstr ""
+
